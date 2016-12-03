@@ -1,22 +1,26 @@
 # gctag: 把网页内容或文本文件生成特定的云标签
 ```
-                      $$\                         
-                      $$ |                        
- $$$$$$\   $$$$$$$\ $$$$$$\    $$$$$$\   $$$$$$\  
-$$  __$$\ $$  _____|\_$$  _|   \____$$\ $$  __$$\
-$$ /  $$ |$$ /        $$ |     $$$$$$$ |$$ /  $$ |
-$$ |  $$ |$$ |        $$ |$$\ $$  __$$ |$$ |  $$ |
-\$$$$$$$ |\$$$$$$$\   \$$$$  |\$$$$$$$ |\$$$$$$$ |
- \____$$ | \_______|   \____/  \_______| \____$$ |
-$$\   $$ |                              $$\   $$ |
-\$$$$$$  |                              \$$$$$$  |
- \______/                                \______/
+                    ___                        
+                   (   )                       
+  .--.     .--.     | |_       .---.    .--.   
+ /    \   /    \   (   __)    / .-, \  /    \  
+;  ,-. ' |  .-. ;   | |      (__) ; | ;  ,-. '
+| |  | | |  |(___)  | | ___    .'`  | | |  | |
+| |  | | |  |       | |(   )  / .'| | | |  | |
+| |  | | |  | ___   | | | |  | /  | | | |  | |
+| '  | | |  '(   )  | ' | |  ; |  ; | | '  | |
+'  `-' | '  `-' |   ' `-' ;  ' `-'  | '  `-' |
+ `.__. |  `.__,'     `.__.   `.__.'_.  `.__. |
+ ( `-' ;                               ( `-' ;
+  `.__.                                 `.__.  
+
+
                             --------- by Yanghangfeng
 ```
 
 #### 1.把仓库克隆到本地
 ```
->>> git clone
+>>> git clone https://github.com/Fenghuapiao/gctag.git
 ```
 #### 2.安装依赖文件
 * 方法一
@@ -24,6 +28,7 @@ $$\   $$ |                              $$\   $$ |
 >>> pip install -r requirements.txt
 ```
 * 方法二(推荐)
+
 如果方法一安装失败，可以在这个[网站下载](http://www.lfd.uci.edu/~gohlke/pythonlibs/)相应的.whl包,然后pip安装即可
 ```
 >>> pip install wheel
@@ -71,7 +76,7 @@ $$\   $$ |                              $$\   $$ |
 ```
 >>> python gctag.py --input ./alice.txt --model ./alice_mask.png --bg white --output ./alice.jpg
 ```
-![](https://github.com/Fenghuapiao/gctag/blob/master/example/alice_mask.png)
+![alice_mask.png](https://github.com/Fenghuapiao/gctag/blob/master/example/alice_mask.png)
 * 结果四:
 ![](https://github.com/Fenghuapiao/gctag/blob/master/example/alice_white.jpg)
 
