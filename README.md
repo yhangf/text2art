@@ -42,20 +42,22 @@ $$\   $$ |                              $$\   $$ |
 - `--height`:生成图片的高度(可选参数，默认为1000)
 - `--bg`:生成图片的背景颜色(可选参数，black or white，默认为black)
 - `--margi`:生成图片中文字的边距(可选参数，默认为5)
+
 说明: `--url`,`--input`参数必选其一
+
 #### 4.使用方法
 ##### 4-1. 在线获取网页并生成标签云
 ```
 >>> python gctag.py --url https://www.douban.com/note/591278881/ --output ./douban.jpg --bg white --ttf ./font/叶立群几何体.ttf
 ```
 * 结果一:
-![]()
+![](https://github.com/Fenghuapiao/gctag/blob/master/example/douban_your_name.jpg)
 
 ```
 >>> python gctag.py --url https://www.douban.com/note/591278881/ --output ./douban_your_name2.jpg --bg white --ttf ./font/奇思_奔跑吧电影.ttf
 ```
 * 结果二:
-![]()
+![](https://github.com/Fenghuapiao/gctag/blob/master/example/douban_your_name2.jpg)
 
 ##### 4-2.利用本地文件生成标签云
 ```
@@ -63,15 +65,15 @@ $$\   $$ |                              $$\   $$ |
 ```
 
 * 结果三:
-![]()
+![](https://github.com/Fenghuapiao/gctag/blob/master/example/js.jpg)
 
 以alice_mask.png为模板生成标签云
 ```
 >>> python gctag.py --input ./alice.txt --model ./alice_mask.png --bg white --output ./alice.jpg
 ```
-![](alice模板)
+![](https://github.com/Fenghuapiao/gctag/blob/master/example/alice_mask.png)
 * 结果四:
-![]()
+![](https://github.com/Fenghuapiao/gctag/blob/master/example/alice_white.jpg)
 
 #### 5.LICENSE
-[MIT]()
+[MIT](https://github.com/Fenghuapiao/gctag/blob/master/LICENSE)
