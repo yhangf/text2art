@@ -1,7 +1,6 @@
 import re
 import sys
 import argparse
-from os import path
 
 import PIL
 import jieba
@@ -60,6 +59,7 @@ def main():
     parser.add_argument('--height', metavar='INPUT_HEIGHT', default=1000, type=int, help='input the image height')
     parser.add_argument('--bg', metavar='INPUT_BACKGROUND_COLOR', default='black', help='input the image background_color')
     parser.add_argument('--margin', metavar='INPUT_MARGIN', default=5, type=int, help='input the image margin')
+    parser.add_argument('--max_font_size', metavar='INPUT_max_font_size', default=60, type=int, help='input the max_font_size')
     args = parser.parse_args()
 
     url = args.url
@@ -67,6 +67,7 @@ def main():
     input_file = args.input
     model_path = args.model
     typeface = args.ttf
+    max_font_size=args.max_font_size
     width = args.width
     height = args.height
     background_color = args.bg
@@ -77,7 +78,7 @@ def main():
     except:
         image_mask=None
 
-    wordcloud = WordCloud(font_path=typeface, mask=image_mask,
+    wordcloud = WordCloud(font_path=typeface, mask=image_mask, max_font_size=max_font_size,
                           background_color=background_color, margin=margin, width=width, height=height)
     try:
         txt_join = get_txt(input_file)
