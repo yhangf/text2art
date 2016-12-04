@@ -46,7 +46,7 @@
 - `--width`:生成图片的宽度(可选参数，默认为1800)
 - `--height`:生成图片的高度(可选参数，默认为1000)
 - `--bg`:生成图片的背景颜色(可选参数，black or white，默认为black)
-- `--margi`:生成图片中文字的边距(可选参数，默认为5)
+- `--margin`:生成图片中文字的边距(可选参数，默认为5)
 
 说明: `--url`,`--input`参数必选其一
 
@@ -56,7 +56,7 @@
 >>> python gctag.py --url https://www.douban.com/note/591278881/ --output ./douban.jpg --bg white --ttf ./font/叶立群几何体.ttf
 ```
 * 结果一:
-![](https://github.com/Fenghuapiao/gctag/blob/master/example/douban_your_name.jpg)
+![](https://github.com/Fenghuapiao/gctag/blob/master/example/douban_your_name3.jpg)
 
 ```
 >>> python gctag.py --url https://www.douban.com/note/591278881/ --output ./douban_your_name2.jpg --bg white --ttf ./font/奇思_奔跑吧电影.ttf
