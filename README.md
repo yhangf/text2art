@@ -1,5 +1,5 @@
 # text2art:  Generating controlled terminal art fonts. 
-           [![Version][version-badge]][version-link] ![MIT License][license-badge]
+[![Version][version-badge]][version-link] ![MIT License][license-badge]
 
 
 `text2art` is Python implementation of the original Figlet project. It looks like this (although you can select your font and color):
