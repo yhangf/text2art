@@ -1,6 +1,4 @@
-# text2art:  Generating controlled terminal art fonts. 
-[![Version][version-badge]][version-link] ![MIT License][license-badge]
-
+# text2art[![Version][version-badge]][version-link] ![MIT License][license-badge]
 
 `text2art` is Python implementation of the original Figlet project. It looks like this (although you can select your font and color):
 
@@ -165,6 +163,7 @@ MIT ([here](https://github.com/Fenghuapiao/text2art/blob/master/LICENSE))
 [version-badge]: https://img.shields.io/pypi/v/text2art.svg?label=version
 [version-link]: https://pypi.python.org/pypi/text2art/
 [license-badge]: https://img.shields.io/badge/license-MIT-007EC7.svg
+
 [colored]: https://raw.githubusercontent.com/Fenghuapiao/text2art/master/screenshot/colored.png
 [justify]: https://raw.githubusercontent.com/Fenghuapiao/text2art/master/screenshot/justify_left.png
 [on_color]: https://raw.githubusercontent.com/Fenghuapiao/text2art/master/screenshot/on_color.png
