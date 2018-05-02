@@ -1,5 +1,5 @@
 # text2art:  Generating controlled terminal art fonts. 
-<h1 style="text-align:center">[![Version][version-badge]][version-link] ![MIT License][license-badge]</h1>
+<p align = "center">[![Version][version-badge]][version-link] ![MIT License][license-badge]</p>
 
 
 `text2art` is Python implementation of the original Figlet project. It looks like this (although you can select your font and color):
