@@ -1,4 +1,16 @@
-# text2art [![Version][version-badge]][version-link] ![MIT License][license-badge]
+# <p align="center">text2art </p>
+<p align="center">
+    <a href="https://github.com/Fenghuapiao/text2art/blob/master/LICENSE">
+        <img src="https://img.shields.io/cocoapods/l/EFQRCode.svg?style=flat">
+        </a>
+    <a href="https://pypi.python.org/pypi/text2art">
+        <img src="https://img.shields.io/pypi/v/text2art.svg">
+        </a>
+    <a href="https://github.com/python/cpython">
+        <img src="https://img.shields.io/badge/language-python3-ff69b4.svg">
+        </a>
+</p>
+
 
 `text2art` is Python implementation of the original Figlet project. It looks like this (although you can select your font and color):
 
@@ -158,11 +170,6 @@ very welcome to star and pull requests, and I hope you can submit a nice font or
 ---
 
 MIT ([here](https://github.com/Fenghuapiao/text2art/blob/master/LICENSE))
-
-
-[version-badge]: https://img.shields.io/pypi/v/text2art.svg?label=version
-[version-link]: https://pypi.python.org/pypi/text2art/
-[license-badge]: https://img.shields.io/badge/license-MIT-007EC7.svg
 
 [colored]: https://raw.githubusercontent.com/Fenghuapiao/text2art/master/screenshot/colored.png
 [justify]: https://raw.githubusercontent.com/Fenghuapiao/text2art/master/screenshot/justify_left.png
