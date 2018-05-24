@@ -9,6 +9,12 @@
     <a href="https://github.com/python/cpython">
         <img src="https://img.shields.io/badge/language-python3-ff69b4.svg">
         </a>
+    <a href="https://github.com/Fenghuapiao/text2art">
+    <img src="https://img.shields.io/github/stars/Fenghuapiao/text2art.svg?style=social&label=Star">
+        </a>
+    <a href="https://github.com/Fenghuapiao/text2art">
+    <img src="https://img.shields.io/github/forks/Fenghuapiao/text2art.svg?style=social&label=Fork">
+        </a>
 </p>
 
 
