@@ -16,7 +16,7 @@ setup(
     author = "hangfengYang",
     author_email = "yhf5fhy@gmail.com",
     classifiers = [],
-    url = "https://github.com/Fenghuapiao/text2art",
+    url = "https://github.com/yhangf/text2art",
     packages = ["text2art"],
     install_requires = [
         "fire",
