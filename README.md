@@ -1,6 +1,6 @@
 # <p align="center">text2art </p>
 <p align="center">
-    <a href="https://github.com/Fenghuapiao/text2art/blob/master/LICENSE">
+    <a href="https://github.com/yhangf/text2art/blob/master/LICENSE">
         <img src="https://img.shields.io/cocoapods/l/EFQRCode.svg?style=flat">
         </a>
     <a href="https://pypi.python.org/pypi/text2art">
@@ -9,11 +9,11 @@
     <a href="https://github.com/python/cpython">
         <img src="https://img.shields.io/badge/language-python3-ff69b4.svg">
         </a>
-    <a href="https://github.com/Fenghuapiao/text2art">
-    <img src="https://img.shields.io/github/stars/Fenghuapiao/text2art.svg?style=social&label=Star">
+    <a href="https://github.com/yhangf/text2art">
+    <img src="https://img.shields.io/github/stars/yhangf/text2art.svg?style=social&label=Star">
         </a>
-    <a href="https://github.com/Fenghuapiao/text2art">
-    <img src="https://img.shields.io/github/forks/Fenghuapiao/text2art.svg?style=social&label=Fork">
+    <a href="https://github.com/yhangf/text2art">
+    <img src="https://img.shields.io/github/forks/yhangf/text2art.svg?style=social&label=Fork">
         </a>
 </p>
 
@@ -148,10 +148,10 @@
 >>> pip install text2art
 ```
 
-Alternatively, you can also get the latest source code from [GitHub](https://github.com/Fenghuapiao/text2art) and install it manually:
+Alternatively, you can also get the latest source code from [GitHub](https://github.com/yhangf/text2art) and install it manually:
 
 ```
->>> git clone git@github.com:Fenghuapiao/text2art.git
+>>> git clone git@github.com:yhangf/text2art.git
 >>> cd text2art
 >>> python setup.py install
 ```
@@ -175,10 +175,10 @@ very welcome to star and pull requests, and I hope you can submit a nice font or
 ### License
 ---
 
-MIT ([here](https://github.com/Fenghuapiao/text2art/blob/master/LICENSE))
+MIT ([here](https://github.com/yhangf/text2art/blob/master/LICENSE))
 
-[colored]: https://raw.githubusercontent.com/Fenghuapiao/text2art/master/screenshot/colored.png
-[justify]: https://raw.githubusercontent.com/Fenghuapiao/text2art/master/screenshot/justify_left.png
-[on_color]: https://raw.githubusercontent.com/Fenghuapiao/text2art/master/screenshot/on_color.png
-[attr]: https://raw.githubusercontent.com/Fenghuapiao/text2art/master/screenshot/set_attr.png
-[width]: https://raw.githubusercontent.com/Fenghuapiao/text2art/master/screenshot/set_width.png
+[colored]: https://raw.githubusercontent.com/yhangf/text2art/master/screenshot/colored.png
+[justify]: https://raw.githubusercontent.com/yhangf/text2art/master/screenshot/justify_left.png
+[on_color]: https://raw.githubusercontent.com/yhangf/text2art/master/screenshot/on_color.png
+[attr]: https://raw.githubusercontent.com/yhangf/text2art/master/screenshot/set_attr.png
+[width]: https://raw.githubusercontent.com/yhangf/text2art/master/screenshot/set_width.png
