@@ -23,6 +23,7 @@ setup(
         "colorama",
         "pyfiglet"
     ],
+    
     entry_points = {
         "console_scripts": [
             "text2art  =  text2art.main:main",
