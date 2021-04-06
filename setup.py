@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 
-VERSION = "0.2.0"
+__version__ = "0.2.0"
 
 with open("README.md", "r", encoding="utf-8") as fp:
     long_description = fp.read()
 
 setup(
     name = "text2art",
-    version = VERSION,
+    version = __version__,
     description = "Generating controlled terminal art fonts",
     long_description=long_description,
     long_description_content_type="text/markdown",
