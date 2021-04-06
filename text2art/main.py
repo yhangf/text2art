@@ -38,9 +38,11 @@ def rd(text, on_color=None, attr=None,
         attr: Get a character string,setting the effect of the text.
         available attributes:
                 bold, dark, underline, blink, reverse, concealed.
+
         width: Setting the terminal width of the output font, type is int.
         justify: Setting the location of the terminal output font.
         available parameter: left, enter, right.
+
     Returns:
         A text of a specific color effect.
     """
@@ -48,7 +50,7 @@ def rd(text, on_color=None, attr=None,
     rand_color = color_dict.get(random.randint(30, 38))
 
     rand_font = font_list[rand_int]
-    print("Random font is :{}".format(rand_font))
+    print(f"Random font: {format(rand_font)}")
     f = Figlet(
         font=rand_font, width=width,
         justify=justify
@@ -74,9 +76,11 @@ def gt(text, font=DEFAULT_FONT, color="magenta",
         attr: Get a character string,setting the effect of the text.
         available attributes:
                 bold, dark, underline, blink, reverse, concealed.
+   
         width: Setting the size of the terminal output font, type is int.
         justify: Setting the location of the terminal output font.
         available parameter: left, enter, right.
+
     Returns:
         A text of a specific color effect.
 
@@ -99,11 +103,14 @@ def h():
             
             available text colors:
                 red, green, yellow, blue, magenta, cyan, white.
+            
             available text highlights:
                 on_red, on_green, on_yellow, on_blue, on_magenta, 
                 on_cyan,on_white.
+            
             available attributes:
                 bold, dark, underline, blink, reverse, concealed.
+            
             width: Setting the size of the terminal output font,type is int.
             justify: Setting the location of the terminal output font.
             available parameter: left, enter, right.
