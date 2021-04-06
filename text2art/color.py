@@ -1,6 +1,8 @@
 import re
 
-from text2art.utils import colorFormat
+from utils import colorFormat
+
+MAIN_PATTERN = "(.*?)"
 
 
 def colored(text, color=None, on_color=None, attr=None):
@@ -35,19 +37,19 @@ def colored(text, color=None, on_color=None, attr=None):
 
     if color is not None:
         # replace the original color font,example: "\x1b[36mHang\x1b[0m" -> "Hang".
-        text = re.sub(colorFormat.COLORS_REGEX + "(.*?)" +
+        text = re.sub(colorFormat.COLORS_REGEX + MAIN_PATTERN +
                       colorFormat.RESET_REGEX, r"\1", text)
         text = colorFormat.FMT_STR % (colorFormat.COLORS[color], text)
 
     if on_color is not None:
         # replace a font with a background color.
-        text = re.sub(colorFormat.HIGHLIGHTS_REGEX + "(.*?)" +
+        text = re.sub(colorFormat.HIGHLIGHTS_REGEX + MAIN_PATTERN +
                       colorFormat.RESET_REGEX, r"\1", text)
         text = colorFormat.FMT_STR % (colorFormat.HIGHLIGHTS[on_color], text)
 
     if attr is not None:
         # replace the effect of the original font.
-        text = re.sub(colorFormat.ATTRIBUTES_REGEX + "(.*?)" +
+        text = re.sub(colorFormat.ATTRIBUTES_REGEX + MAIN_PATTERN +
                       colorFormat.RESET_REGEX, r"\1", text)
         text = colorFormat.FMT_STR % (colorFormat.ATTRIBUTES[attr], text)
 
