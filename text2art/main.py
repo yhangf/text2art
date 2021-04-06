@@ -100,17 +100,17 @@ def h():
                 text2art lf  # Random display of 25 fonts
                 text2art rd text [--on_color] [--attr] [--width] [--justify]
                 text2art gt text [--font] [--color] [--on_color] [--attr] [--width] [--justify]
-            
+
             available text colors:
                 red, green, yellow, blue, magenta, cyan, white.
-            
+
             available text highlights:
                 on_red, on_green, on_yellow, on_blue, on_magenta, 
                 on_cyan,on_white.
-            
+
             available attributes:
                 bold, dark, underline, blink, reverse, concealed.
-            
+
             width: Setting the size of the terminal output font,type is int.
             justify: Setting the location of the terminal output font.
             available parameter: left, enter, right.
