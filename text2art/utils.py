@@ -77,14 +77,12 @@ class colorFormat:
         )
     )
 
-    MAIN_PATTERN = "\033\[(?:{:s})m"
-
     RESET = "\033[0m"
     FMT_STR = "\033[%dm%s"
     RESET_REGEX = "\033\[0m"
-    COLORS_REGEX = f"{MAIN_PATTERN}".format(
+    COLORS_REGEX = "\033\[(?:{:s})m".format(
         "|".join([f"{v}" for v in COLORS.values()]))
-    HIGHLIGHTS_REGEX = f"{MAIN_PATTERN}".format(
+    HIGHLIGHTS_REGEX = "\033\[(?:{:s})m".format(
         "|".join([f"{v}" for v in HIGHLIGHTS.values()]))
-    ATTRIBUTES_REGEX = f"{MAIN_PATTERN}".format(
+    ATTRIBUTES_REGEX = "\033\[(?:{:s})m".format(
         "|".join([f"{v}" for v in ATTRIBUTES.values()]))
