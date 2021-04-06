@@ -15,7 +15,11 @@ setup(
     include_package_data=True,
     author="hangfengYang",
     author_email="yhf5fhy@gmail.com",
-    classifiers=[],
+    classifiers=[
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+    ],
     url="https://github.com/yhangf/text2art",
     packages=["text2art"],
     install_requires=[
