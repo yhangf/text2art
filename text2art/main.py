@@ -12,16 +12,18 @@ font_list = FigletFont.getFonts()
 # Key value pair reversal
 color_dict = {value: key for key, value in colorFormat.COLORS.items()}
 
+
 def lf():
     """Random display of 25 fonts"""
     return random.sample(font_list, 25)
-    
-def rd(text, on_color=None, attr=None, 
+
+
+def rd(text, on_color=None, attr=None,
        width=80, justify="center"):
     """An art font that generates random fonts 
        and random colors.
-       
-       
+
+
        Args:
         text: Get an character string.
         color: Get a color string,dye the input string 
@@ -41,28 +43,27 @@ def rd(text, on_color=None, attr=None,
         available parameter: left, enter, right.
     Returns:
         A text of a specific color effect.
-    
     """
     rand_int = random.randint(1, len(font_list)+1)
     rand_color = color_dict.get(random.randint(30, 38))
-    
+
     rand_font = font_list[rand_int]
     print("Random font is :{}".format(rand_font))
     f = Figlet(
-            font=rand_font, width=width, 
-            justify=justify
-        )
+        font=rand_font, width=width,
+        justify=justify
+    )
     r = f.renderText(text)
     return colored(r, rand_color, on_color, attr)
 
-def gt(text, font=DEFAULT_FONT, color="magenta", 
-       on_color=None, attr=None, width=80, 
+
+def gt(text, font=DEFAULT_FONT, color="magenta",
+       on_color=None, attr=None, width=80,
        justify="center"):
-       
     """An art font that generates the effect of 
        the specified parameter.
-       
-       
+
+
        Args:
         text: Get an character string.
         on_color: Get an character string,setting the background 
@@ -78,15 +79,16 @@ def gt(text, font=DEFAULT_FONT, color="magenta",
         available parameter: left, enter, right.
     Returns:
         A text of a specific color effect.
-    
+
     """
-       
+
     f = Figlet(
-            font, width=width,
-            justify=justify
-        )
+        font, width=width,
+        justify=justify
+    )
     r = f.renderText(text)
-    return colored(r, color, on_color, attr)    
+    return colored(r, color, on_color, attr)
+
 
 def h():
     doc = """
@@ -107,10 +109,12 @@ def h():
             available parameter: left, enter, right.
           """
     print(doc)
-    
+
+
 def main():
     init(autoreset=True)
     fire.Fire()
+
 
 if __name__ == '__main__':
     main()
