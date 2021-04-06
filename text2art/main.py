@@ -4,8 +4,8 @@ from pyfiglet import Figlet, FigletFont
 import fire
 from colorama import init
 
-from text2art.color import colored
-from text2art.utils import colorFormat
+from color import colored
+from utils import colorFormat
 
 DEFAULT_FONT = "ghost"
 font_list = FigletFont.getFonts()
@@ -76,7 +76,7 @@ def gt(text, font=DEFAULT_FONT, color="magenta",
         attr: Get a character string,setting the effect of the text.
         available attributes:
                 bold, dark, underline, blink, reverse, concealed.
-   
+
         width: Setting the size of the terminal output font, type is int.
         justify: Setting the location of the terminal output font.
         available parameter: left, enter, right.
