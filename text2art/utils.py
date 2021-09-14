@@ -27,63 +27,62 @@ class colorFormat:
         8              |     invisible
         ------------------------------------------------
     """
-   
+
     COLORS = dict(
-                list(
-                    zip([
-                        "grey",
-                        "red",
-                        "green",
-                        "yellow",
-                        "blue",
-                        "magenta",
-                        "cyan",
-                        "white"
-                        ],
-                        list(range(30, 38))
-                    )
-                )
+        list(
+            zip([
+                "grey",
+                "red",
+                "green",
+                "yellow",
+                "blue",
+                "magenta",
+                "cyan",
+                "white"
+            ],
+                list(range(30, 38))
+            )
         )
-        
+    )
+
     HIGHLIGHTS = dict(
-                    list(
-                        zip([
-                            "on_grey",
-                            "on_red",
-                            "on_green",
-                            "on_yellow",
-                            "on_blue",
-                            "on_magenta",
-                            "on_cyan",
-                            "on_white"
-                            ],
-                            list(range(40, 48))
-                        )
-                    )
+        list(
+            zip([
+                "on_grey",
+                "on_red",
+                "on_green",
+                "on_yellow",
+                "on_blue",
+                "on_magenta",
+                "on_cyan",
+                "on_white"
+            ],
+                list(range(40, 48))
+            )
         )
-        
+    )
+
     ATTRIBUTES = dict(
-                    list(
-                        zip([
-                            "bold",
-                            "dark",
-                            "",
-                            "underline",
-                            "blink",
-                            "",
-                            "reverse",
-                            "concealed"
-                            ],
-                            list(range(1, 9))
-                        )
-                    )
+        list(
+            zip([
+                "bold",
+                "dark",
+                "underline",
+                "blink",
+                "reverse",
+                "concealed"
+            ],
+                list(range(1, 9))
+            )
         )
-      
-    del ATTRIBUTES[""]
-    
+    )
+
     RESET = "\033[0m"
     FMT_STR = "\033[%dm%s"
     RESET_REGEX = "\033\[0m"
-    COLORS_REGEX = "\033\[(?:{:s})m".format("|".join(["%d" % v for v in COLORS.values()]))
-    HIGHLIGHTS_REGEX = "\033\[(?:{:s})m".format("|".join(["%d" % v for v in HIGHLIGHTS.values()]))
-    ATTRIBUTES_REGEX = "\033\[(?:{:s})m".format("|".join(["%d" % v for v in ATTRIBUTES.values()]))
+    COLORS_REGEX = "\033\[(?:{:s})m".format(
+        "|".join([f"{v}" for v in COLORS.values()]))
+    HIGHLIGHTS_REGEX = "\033\[(?:{:s})m".format(
+        "|".join([f"{v}" for v in HIGHLIGHTS.values()]))
+    ATTRIBUTES_REGEX = "\033\[(?:{:s})m".format(
+        "|".join([f"{v}" for v in ATTRIBUTES.values()]))
